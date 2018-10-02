@@ -1,3 +1,55 @@
-h1 {
-  color: tomato;
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+small {
+  font-size: 0.8em;
+  color: #666;
+  font-style: italic;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+td {
+  padding: 0.25em;
+}
+table > thead > tr > td {
+  border-bottom: 1px solid #666;
+}
+table > tbody > tr:nth-child(even) {
+  background: #eee;
+}
+input,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+form {
+  display: flex;
+}
+form > input[type="text"] {
+  flex-grow: 1;
+  margin-right: 0.5em;
+}
+
+.valid small {
+  color: forestgreen;
+  font-weight: bold;
+}
+
+.valid input {
+  border: 1px solid forestgreen;
+}
+
+.error small {
+  color: #ff4136;
+  font-weight: bold;
+}
+
+.error input {
+  border: 1px solid #ff4136;
 }
